@@ -1,5 +1,4 @@
 const Mongoose = require("mongoose");
-const URL = "mongodb://kuchar:hokuspokus@cluster0-shard-00-00.akqgm.mongodb.net:27017,cluster0-shard-00-01.akqgm.mongodb.net:27017,cluster0-shard-00-02.akqgm.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-j19ers-shard-0&authSource=admin&retryWrites=true&w=majority";
 const dotenv = require("dotenv");
 dotenv.config();
 
