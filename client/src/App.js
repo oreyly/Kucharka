@@ -4,10 +4,11 @@ import Main from "./Stranky/Main";
 import PridejMaterial from "./Stranky/PridejMaterial";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Menu from "./Komponenty/Menu";
+import { GlobalProvider } from "./Kontex/GlobKon/GlobalKontex"
 
 const App = () => {
   return (
-    <div>
+    <GlobalProvider>
       <BrowserRouter>
         <Menu />
         <Switch>
@@ -15,7 +16,7 @@ const App = () => {
           <Route exact path="/pridej-matros" component={PridejMaterial}/>
         </Switch>
       </BrowserRouter>
-    </div>
+    </GlobalProvider>
   )
 }
 
